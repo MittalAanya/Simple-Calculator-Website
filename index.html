@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <h1>Simple Calculator</h1>
+    <br><br>
+    <button onclick="fun1()">Off</button>
+    <button onclick="fun2()">On</button>
+    <br><br>
+    <form name="frm">
+        <button type="button" onclick="frm.n.value+='1'">1</button>
+        <button type="button" onclick="frm.n.value+='2'">2</button>
+        <button type="button" onclick="frm.n.value+='3'">3</button>
+        <button type="button" onclick="frm.n.value+='4'">4</button>
+        <br>
+        <button type="button" onclick="frm.n.value+='5'">5</button>
+        <button type="button" onclick="frm.n.value+='6'">6</button>
+        <button type="button" onclick="frm.n.value+='7'">7</button>
+        <button type="button" onclick="frm.n.value+='8'">8</button>
+        <br>
+        <button type="button" onclick="frm.n.value+='9'">9</button>
+        <button type="button" onclick="frm.n.value+='0'">0</button>
+        <button type="button" onclick="frm.n.value+='+'">+</button>
+        <button type="button" onclick="frm.n.value+='-'">-</button>
+        <br>
+        <button type="button" onclick="frm.n.value+='/'">/</button>
+        <button type="button" onclick="frm.n.value+='*'">*</button>
+        <button type="button" onclick="frm.n.value=''; frm.m.value=''">C</button>
+        <button type="button" onclick="frm.m.value=eval(frm.n.value)">=</button>
+        <br><br>
+        <input type="text" name="n" class="inp">
+        <br><br>
+        <input type="text" name="m" class="inp">
+    </form>
+    </div>
+    <script src="index.js">   
+    </script>
+</body>
+</html>
